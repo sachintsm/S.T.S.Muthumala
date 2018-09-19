@@ -11,13 +11,25 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+S"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Standard"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+C"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value=" Scientific"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -38,6 +50,9 @@
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowActivated" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowActivated"/>
+  </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -53,192 +68,196 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="display" min="-2" pref="358" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="leftbrack" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="power" linkSize="1" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="sin" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="cosin" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="tan" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
-                              <Component id="memminus" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="c" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="log" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="display" min="-2" pref="285" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="four" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="one" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="plusminus" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="backspace" min="-2" pref="139" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="ce" min="-2" pref="139" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="four" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="one" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rightbrack" min="-2" pref="63" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="zero" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="dot" min="-2" pref="66" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="equal" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="five" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="six" linkSize="3" max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="two" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="three" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="add" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="sub" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="seven" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="eight" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="nine" linkSize="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="pi" linkSize="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fact" linkSize="1" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="mod" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="division" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="multiplication" linkSize="1" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="zero" linkSize="3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="dot" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="equal" linkSize="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="memplus" linkSize="3" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <Component id="cube" linkSize="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="square" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="five" linkSize="3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="sqrt" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="six" linkSize="3" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="ms" linkSize="3" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="two" linkSize="3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="uphistory" min="-2" pref="66" max="-2" attributes="0"/>
+                                      <Component id="three" linkSize="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="downhistoy" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <Component id="percentage" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="add" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sub" linkSize="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="seven" linkSize="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="eight" linkSize="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="nine" linkSize="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="multiplication" linkSize="1" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="leftbrack" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sin" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="pi" max="32767" attributes="0"/>
+                                  <Component id="rightbrack" pref="63" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="division" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="percentage" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="sqrt" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mod" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cosin" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="log" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="fact" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="square" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="tan" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="power" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cube" linkSize="3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="downhistoy" min="-2" pref="66" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="backspace" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="c" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ce" min="-2" pref="72" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="memminus" linkSize="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="memplus" linkSize="3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ms" linkSize="3" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="uphistory" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="144" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="display" min="-2" pref="58" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="memplus" linkSize="4" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="memminus" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ms" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="downhistoy" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="uphistory" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="display" min="-2" pref="58" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ce" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="c" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="backspace" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="memplus" linkSize="4" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="memminus" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ms" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="uphistory" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="seven" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="eight" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nine" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="multiplication" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="four" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="six" linkSize="4" alignment="3" max="32767" attributes="0"/>
+                          <Component id="five" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sub" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="one" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="two" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="three" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="add" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="zero" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dot" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="equal" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="plusminus" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tan" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="power" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cube" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="downhistoy" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cosin" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="log" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="fact" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="square" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sin" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="pi" linkSize="2" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="percentage" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sqrt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="leftbrack" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="rightbrack" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="division" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mod" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ce" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backspace" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="c" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cube" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="square" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="sqrt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="power" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="percentage" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="division" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="mod" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="fact" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="pi" linkSize="2" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="log" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="seven" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="eight" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="nine" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="multiplication" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tan" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="four" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="six" linkSize="4" alignment="3" max="32767" attributes="0"/>
-                  <Component id="five" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="sub" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cosin" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="one" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="two" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="three" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="add" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="sin" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="zero" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="dot" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="equal" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="leftbrack" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="rightbrack" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="43" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -257,6 +276,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="add">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
@@ -265,16 +287,25 @@
     </Component>
     <Component class="javax.swing.JButton" name="sub">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="division">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="multiplication">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="*"/>
       </Properties>
       <Events>
@@ -283,6 +314,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="percentage">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="%"/>
       </Properties>
       <Events>
@@ -291,21 +325,36 @@
     </Component>
     <Component class="javax.swing.JButton" name="fact">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="n!"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ce">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="CE"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ceActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="c">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="cosin">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="cosin"/>
       </Properties>
       <Events>
@@ -314,16 +363,28 @@
     </Component>
     <Component class="javax.swing.JButton" name="power">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="x^y"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="square">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2^x"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="squareActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="sin">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="sin"/>
       </Properties>
       <Events>
@@ -332,16 +393,28 @@
     </Component>
     <Component class="javax.swing.JButton" name="mod">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Mod"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="sqrt">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="sqrt"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sqrtActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="rightbrack">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value=")"/>
       </Properties>
       <Events>
@@ -350,6 +423,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="leftbrack">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="("/>
       </Properties>
       <Events>
@@ -358,31 +434,49 @@
     </Component>
     <Component class="javax.swing.JButton" name="pi">
       <Properties>
-        <Property name="text" type="java.lang.String" value="pi"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x3c0;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="equal">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="memplus">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="M+"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="memminus">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="M-"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ms">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="MS"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="one">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
       <Events>
@@ -391,6 +485,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="two">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
       <Events>
@@ -399,11 +496,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="cube">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="3^x"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="zero">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
       <Events>
@@ -412,6 +515,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="three">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
       <Events>
@@ -420,6 +526,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="four">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
       <Events>
@@ -428,6 +537,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="five">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
       <Events>
@@ -436,6 +548,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="six">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
       <Events>
@@ -444,6 +559,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="seven">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
       <Events>
@@ -452,6 +570,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="eight">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
       <Events>
@@ -460,6 +581,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="nine">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
       <Events>
@@ -468,6 +592,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="dot">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
       <Events>
@@ -476,11 +603,20 @@
     </Component>
     <Component class="javax.swing.JButton" name="backspace">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&lt;-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backspaceActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="tan">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="tan"/>
       </Properties>
       <Events>
@@ -489,6 +625,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="log">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="log"/>
       </Properties>
       <Events>
@@ -497,10 +636,10 @@
     </Component>
     <Component class="javax.swing.JButton" name="downhistoy">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/my_cal/Capture.jpg"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value=" "/>
+        <Property name="text" type="java.lang.String" value="&#x2c5;"/>
         <Property name="alignmentX" type="float" value="0.5"/>
       </Properties>
       <Events>
@@ -509,8 +648,22 @@
     </Component>
     <Component class="javax.swing.JButton" name="uphistory">
       <Properties>
-        <Property name="text" type="java.lang.String" value="^"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x2c4;"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="plusminus">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#xb1;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="plusminusActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
