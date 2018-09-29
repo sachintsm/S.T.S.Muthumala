@@ -99,4 +99,4 @@ Finally, Enjoy it..
      •	$ exit
  -------------------------------------------------------------------------------------------------------------------------------------
 ### Software Download Link:
-https://drive.google.com/drive/folders/1IAOSz8wntoJaNJtAhvEiHgDQFyqpmSXL?usp=sharing
+https://drive.google.com/file/d/1Pc-YHEnd8Wrfrvg7AmYlEKhnwwFaw6th/view?usp=sharing
